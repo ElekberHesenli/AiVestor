@@ -71,7 +71,7 @@ const InvestmentSimulator: React.FC = () => {
                     className="w-8 h-8 rounded-full object-contain bg-slate-800 p-1"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      target.src = 'https://via.placeholder.com/32?text=' + asset.symbol.charAt(0);
+                      target.src = '' + asset.imageUrl;
                     }}
                   />
                   <div>

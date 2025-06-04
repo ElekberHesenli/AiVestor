@@ -20,7 +20,7 @@ const RecommendationCard: React.FC<RecommendationCardProps> = ({ asset }) => {
               className="w-8 h-8 rounded-full object-contain bg-slate-800 p-1"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
-                target.src = 'https://via.placeholder.com/40?text=' + asset.symbol;
+                target.src =  asset.imageUrl
               }}
             />
             <div>

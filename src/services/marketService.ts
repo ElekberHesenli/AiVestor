@@ -18,7 +18,7 @@ const mockAssets: AssetType[] = [
     riskLevel: 'High',
     projectedReturn: 8.5, // Projected 8.5% return
     projectedReturnDays: 14, // Over 14 days
-    imageUrl: 'https://cryptologos.cc/logos/bitcoin-btc-logo.png',
+    imageUrl: 'src/assets/img/bitcoin-btc-logo.png',
   },
   {
     id: 'eth-001',
@@ -36,7 +36,7 @@ const mockAssets: AssetType[] = [
     riskLevel: 'High',
     projectedReturn: 15.2,
     projectedReturnDays: 14,
-    imageUrl: 'https://cryptologos.cc/logos/ethereum-eth-logo.png',
+    imageUrl: 'src/assets/img/ethereum-eth-logo.png',
   },
   {
     id: 'aapl-001',
@@ -54,7 +54,7 @@ const mockAssets: AssetType[] = [
     riskLevel: 'Medium',
     projectedReturn: 5.8,
     projectedReturnDays: 30,
-    imageUrl: 'https://logo.clearbit.com/apple.com',
+    imageUrl: 'src/assets/img/apple.png',
   },
   {
     id: 'msft-001',
@@ -72,7 +72,7 @@ const mockAssets: AssetType[] = [
     riskLevel: 'Medium',
     projectedReturn: 6.5,
     projectedReturnDays: 30,
-    imageUrl: 'https://logo.clearbit.com/microsoft.com',
+    imageUrl: 'src/assets/img/microsoft.png',
   },
   {
     id: 'spy-001',
@@ -90,7 +90,7 @@ const mockAssets: AssetType[] = [
     riskLevel: 'Low',
     projectedReturn: 3.2,
     projectedReturnDays: 60,
-    imageUrl: 'https://etfdb.com/images/etfs/SPY.png',
+    imageUrl: 'src/assets/img/Spy.png',
   },
   {
     id: 'gold-001',
@@ -108,7 +108,7 @@ const mockAssets: AssetType[] = [
     riskLevel: 'Low',
     projectedReturn: 2.8,
     projectedReturnDays: 90,
-    imageUrl: 'https://www.gold.org/themes/custom/gold/logo.svg',
+    imageUrl: 'src/assets/img/Gold-4.png',
   },
   {
     id: 'sol-001',
@@ -126,7 +126,7 @@ const mockAssets: AssetType[] = [
     riskLevel: 'High',
     projectedReturn: 25.5,
     projectedReturnDays: 14,
-    imageUrl: 'https://cryptologos.cc/logos/solana-sol-logo.png',
+    imageUrl: 'src/assets/img/solana-sol-logo.png',
   },
   {
     id: 'bonds-001',
@@ -144,7 +144,7 @@ const mockAssets: AssetType[] = [
     riskLevel: 'Low',
     projectedReturn: 1.8,
     projectedReturnDays: 365,
-    imageUrl: 'https://www.treasury.gov/SiteCollectionImages/treasury_logo_smaller.jpg',
+    imageUrl: 'src/assets/img/department.png',
   },
 ];
 

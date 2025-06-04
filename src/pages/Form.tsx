@@ -113,21 +113,33 @@ const Form: React.FC = () => {
               Sentiment
             </label>
             <div className="flex gap-4">
-              {['positive', 'neutral', 'negative'].map((sentiment) => (
-                <button
-                  key={sentiment}
-                  type="button"
-                  onClick={() => setNewComment(prev => ({ ...prev, sentiment: sentiment as any }))}
-                  className={`flex-1 py-2 px-4 rounded-lg font-medium transition-colors ${
-                    newComment.sentiment === sentiment
-                      ? 'bg-teal-500 text-white'
-                      : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
-                  }`}
-                >
-                  {sentiment.charAt(0).toUpperCase() + sentiment.slice(1)}
-                </button>
-              ))}
-            </div>
+  {['positive', 'neutral', 'negative'].map((sentiment) => {
+    const isActive = newComment.sentiment === sentiment;
+
+    const activeClasses = {
+      positive: 'bg-[#22C55E33] text-[#4ADE80]',
+      neutral: 'bg-slate-700 text-slate-300',
+      negative: 'bg-red-500/20 text-red-400',
+    };
+
+    return (
+      <button
+        key={sentiment}
+        type="button"
+        onClick={() =>
+          setNewComment((prev) => ({ ...prev, sentiment: sentiment as any }))
+        }
+        className={`flex-1 py-2 px-4 rounded-lg font-medium transition-colors ${
+          isActive
+            ? activeClasses[sentiment as 'positive' | 'neutral' | 'negative']
+            : 'bg-slate-700 text-slate-300 hover:bg-slate-600'
+        }`}
+      >
+        {sentiment.charAt(0).toUpperCase() + sentiment.slice(1)}
+      </button>
+    );
+  })}
+</div>
           </div>
 
           <div>

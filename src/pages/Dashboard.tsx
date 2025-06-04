@@ -21,7 +21,7 @@ const Dashboard: React.FC = () => {
       <div className="lg:col-span-2 space-y-6">
         <section className="bg-slate-800 rounded-xl shadow-lg p-6 border border-slate-700">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold text-white">Welcome back, {userProfile.name}</h2>
+            <h2 className="text-xl font-bold text-white">Welcome, {userProfile.name}</h2>
             <div className="flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full bg-slate-700 text-teal-400">
               <Activity className="h-4 w-4" />
               <span>Risk Level: {userProfile.riskLevel}</span>

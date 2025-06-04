@@ -24,6 +24,8 @@ function App() {
 
   return (
     <AppContextProvider>
+      <img src="src\assets\img\black_circle_360x360 (1).png" alt="Built with Bolt" className="w-20  absolute top-24 right-4 z-50"
+/>
       <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 text-white">
         <header className="border-b border-slate-700 bg-slate-800/80 backdrop-blur-lg sticky top-0 z-10">
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
